@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AI Chatbot for DoJ India</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 </head>
+
 <body>
-    <h1>Welcome page</h1>
+    <header>
+        <h1>Welcome to the DoJ India AI Chatbot</h1>
+        <p>Your assistant for legal inquiries and support.</p>
+    </header>
+
+    <main>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="#">EquiAI</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    
+        <section id="chat-container">
+            <div id="chatbox">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div id="user-input">
+                <input type="text" id="user-message" placeholder="Type your message here...">
+                <button id="send-button">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Made by JarOfSand. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
