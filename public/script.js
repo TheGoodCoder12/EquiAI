@@ -31,5 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function clearChat() {
-    document.getElementById('chatbox').innerHTML = '';
+    var iframe = document.getElementById('chatbox');
+    iframe.src = iframe.src;
 }
