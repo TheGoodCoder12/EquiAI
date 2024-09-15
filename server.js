@@ -9,17 +9,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/welcome', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'welcome.html'));
+    res.sendFile(path.join(__dirname, 'public', 'templates', 'welcome.html'));
 });
-
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'about.html'));
-});
-
-app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'contact.html'));
-});
-
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
