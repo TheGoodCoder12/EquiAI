@@ -14,11 +14,7 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/auth',AuthRouter);
 
-app.get("/",(req,res)=>{
-    res.send("HOLA")
-})
-
-app.get('/welcom', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'templates', 'welcome.html'));
 });
 
